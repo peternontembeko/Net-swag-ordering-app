@@ -10,12 +10,19 @@ namespace Net_swag_ordering_app
         {
             InitializeComponent();
 
+            var page = new NavigationPage(new SwaggPage());
+            page.BarTextColor = Color.White;
+            page.BarBackgroundColor = Color.Lightblue;
+            //(Color)App.Current.Resources[primaryblue];
+            MainPage = page;
+
             MainPage = new MainPage();
         }
 
         protected override void OnStart()
         {
         }
+
 
         protected override void OnSleep()
         {

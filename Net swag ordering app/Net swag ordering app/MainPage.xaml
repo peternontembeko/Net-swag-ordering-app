@@ -6,38 +6,47 @@
 
 
         <ListView.ItemTemplate>
-           <DataTemplate x:DataType="Net_swag_ordering _app>"
-             <ViewCell>
-                <Grid>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid>
+
+                        <Grid.RowDefinitions>
+
+
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text={Binding Name}" Grid.Row="0" Grid.Column="0"></Label>
+                        <Entry Grid.Row="0" Grid.Column="1" />
+                        <Label Text="Gender" Grid.Row="0" Grid.Column="0"/>
+                        <Entry Grid.Row="0" Grid.Column="1"/>
+                        <Label Text="T-shirt Size" Grid.Row="0" Grid.Column="0"/>
+                        <Entry Grid.Column="0"  Grid.Row="1"/>
+                        <Label Text="Date of Order" Grid.Row="0" Grid.Column="0"/>
+                        <Entry Grid.Row="0" Grid.Column="1"/>
+                        <Label Text="T-shirt Colour Grid.Row=0" Grid.Row="0" Grid.Column="0"/>
+                        <Entry Grid.Row="0"  Grid.Column="1"/>
+                        <Label Text="Shipping Address" Grid.Row="0" Grid.Column="0"/>
+                        <Entry Grid.Row="0" Grid.Column="1"/>
+
+
+                        <Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+
+    </ListView>
+</ContentPage>
                     
-         <Grid.RowDefinitions>
-             <RowDefinition Height="*"/>
-             <RowDefinition Height="*"/>
-             <RowDefinition Height="*"/>
-             <RowDefinition Height="*"/>
-             <RowDefinition Height="*"/>
-             <RowDefinition Height="*"/>
-             </Grid.RowDefinitions>
-            
-          <Grid.ColumnDefinitions>
-              <ColumnDefinition Width="Auto"/>
-              <ColumnDefinition Width="2*"/>
-              <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
 
-             <Label Text="Name" Grid.Row="0" Grid.Column="0"></Label>
-                    <Entry Grid.Row="0" Grid.Column="1" />
-                    <Label Text="Gender" Grid.Row="0" Grid.Column="0"/>
-                    <Entry Grid.Row="0" Grid.Column="1"/>
-                    <Label Text="T-shirt Size" Grid.Row="0" Grid.Column="0"/>
-                    <Entry Grid.Column="0"  Grid.Row="1"/>
-                    <Label Text="Date of Order" Grid.Row="0" Grid.Column="0"/>
-                    <Entry Grid.Row="0" Grid.Column="1"/>
-                    <Label Text="T-shirt Colour Grid.Row=0" Grid.Row="0" Grid.Column="0"/>
-                    <Entry Grid.Row="0"  Grid.Column="1"/>
-                    <Label Text="Shipping Address" Grid.Row="0" Grid.Column="0"/>
-                    <Entry Grid.Row="0" Grid.Column="1"/>
-
-
-                <Grid>
-          <Grid/>
